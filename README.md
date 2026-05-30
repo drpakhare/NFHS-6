@@ -27,7 +27,7 @@ data. Live site: **https://drpakhare.github.io/NFHS-6/dashboard/**
 ├── NFHS_Combined_Database_3to6.xlsx # 5-sheet workbook (the database)
 ├── scripts/                         # extraction + harmonisation pipeline (reproducibility)
 ├── METHODS.md                       # how it was built
-├── DATA_DICTIONARY.md               # columns + all 84 harmonised indicators + comparability
+├── DATA_DICTIONARY.md               # columns + all 96 harmonised indicators + comparability
 └── CHANGELOG.md  CITATION.cff  .zenodo.json  LICENSE
 ```
 
@@ -53,7 +53,7 @@ Site URL: `https://drpakhare.github.io/NFHS-6/dashboard/`
 
 1. On [zenodo.org](https://zenodo.org), log in with GitHub and toggle this repository **ON**
    (do this *before* the release — authors and ORCIDs are pre-filled in `.zenodo.json`).
-2. Create a GitHub **Release** tagged `v1.0.0`. Zenodo mints a DOI and archives the release.
+2. Create a GitHub **Release** tagged `v1.1.0`. Zenodo mints a version DOI and archives the release (the concept DOI above always points to the latest).
 3. Paste the DOI into the badge above, `CITATION.cff`, and the dashboard's **About & cite** tab.
 
 > Zenodo DOIs are citable and trackable but are **not** indexed by Google Scholar. For Scholar
@@ -65,7 +65,7 @@ Site URL: `https://drpakhare.github.io/NFHS-6/dashboard/`
 **APA**
 
 > Pakhare, A., & Joshi, A. (2026). *NFHS India Explorer: a harmonised NFHS-3 to NFHS-6 fact-sheet
-> database and dashboard* (Version v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.20460014
+> database and dashboard* (Version v1.1.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.20460014
 
 **BibTeX**
 
@@ -74,7 +74,7 @@ Site URL: `https://drpakhare.github.io/NFHS-6/dashboard/`
   author    = {Pakhare, Abhijit and Joshi, Ankur},
   title     = {{NFHS India Explorer: a harmonised NFHS-3 to NFHS-6 fact-sheet database and dashboard}},
   year      = {2026},
-  version   = {v1.0.0},
+  version   = {v1.1.0},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.20460014},
   url       = {https://doi.org/10.5281/zenodo.20460014}

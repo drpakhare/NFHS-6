@@ -41,7 +41,8 @@ One row per `state × round × area × indicator`, with a numeric `value`, the o
 Indicator wording differs between rounds. A curated crosswalk maps equivalent indicators to a
 single **harmonised indicator** name using signature matching (required/excluded keyword sets),
 with word-boundary matching to avoid false hits (e.g. "men" inside "women"). This yields
-**84 harmonised indicators**: 52 present in all four rounds, 23 in three, 9 in two. Indicators
+**96 harmonised indicators**: 52 present in all four rounds, 29 in three, 15 in two (including
+blood-pressure and blood-glucose indicators, which were introduced from NFHS-4). Indicators
 not in the crosswalk are retained with their original per-round wording (nothing is discarded).
 
 ### Comparability flags

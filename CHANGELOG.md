@@ -4,6 +4,22 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/), and this project adheres to
 [Semantic Versioning](https://semver.org/).
 
+## [1.1.0] — 2026-05-30
+
+### Added
+- **Blood pressure and blood glucose indicators** (12 harmonised series — blood sugar
+  high / very high / raised, and mildly / moderately–severely / on-medication elevated
+  blood pressure, each split women/men) in a new **"Hypertension & Blood Sugar"** group.
+  These were measured from NFHS-4 onward (absent in NFHS-3) and are flagged as
+  *definition changed across rounds* (measurement method, cut-offs, and NFHS-5/6
+  on-medication composites differ).
+- Harmonised indicator count increased from 84 to **96** (52 in all four rounds,
+  29 in three, 15 in two).
+
+### Changed
+- Regenerated the Excel workbook, CSV, Parquet, dashboard data, data dictionary and
+  comparability/definition metadata to include the new indicators.
+
 ## [1.0.0] — 2026-05-30
 
 First public release.

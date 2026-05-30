@@ -9,7 +9,7 @@ abstract: >-
   comparisons, a filterable data explorer with downloads, comparability flags and
   per-round indicator definitions.
 type: software
-version: "1.0.0"
+version: "1.1.0"
 date-released: "2026-05-30"
 license: MIT
 authors:

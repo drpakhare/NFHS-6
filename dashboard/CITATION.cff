@@ -8,7 +8,7 @@ abstract: >-
   Urban/Rural/Total levels. Lets policymakers, researchers and journalists explore
   maps, trends and state comparisons and download the underlying data.
 type: software
-version: "1.0.0"
+version: "1.1.0"
 date-released: "2026-05-30"
 license: MIT
 authors:

@@ -22,7 +22,7 @@ This dataset is a tidy/long compilation of India's National Family Health Survey
 | `area` | Urban, Rural or Total. |
 | `section` | Source fact-sheet section heading (where available). |
 | `indicator` | Indicator wording as printed in that round's fact sheet. |
-| `harmonized_indicator` | Canonical name aligning the same indicator across rounds (84 indicators). Blank for non-harmonised indicators. |
+| `harmonized_indicator` | Canonical name aligning the same indicator across rounds (96 indicators). Blank for non-harmonised indicators. |
 | `value` | Numeric value of the estimate. |
 | `value_raw` | Original cell text (may include 'NA' or footnote markers). |
 | `data_flag` | 'Parenthesised estimate…' = small/unweighted sample (NFHS-5 convention). |
@@ -32,10 +32,11 @@ This dataset is a tidy/long compilation of India's National Family Health Survey
 
 - **Manipur** is absent from NFHS-6 (field-work not completed).
 - **Ladakh** appears only from NFHS-5; **Dadra & Nagar Haveli** and **Daman & Diu** are separate UTs in NFHS-3/4 but a single merged UT in NFHS-5/6.
+- **Blood pressure & blood glucose** indicators were introduced from NFHS-4 (absent in NFHS-3).
 
-## Harmonised indicators (84)
+## Harmonised indicators (96)
 
-`C` = comparability: ✓ comparable / ⚠ definition changed across rounds. Round columns show ● where the indicator has data.
+52 are present in all four rounds, 29 in three, 15 in two. `C` = comparability: ✓ comparable / ⚠ definition changed across rounds. Round columns show ● where the indicator has data.
 
 | Indicator | Group | C | N3 | N4 | N5 | N6 |
 |---|---|:--:|:--:|:--:|:--:|:--:|
@@ -43,6 +44,10 @@ This dataset is a tidy/long compilation of India's National Family Health Survey
 | ANC: 4+ visits (%) | Maternal Health (ANC/Delivery/PNC) | ✓ | ● | ● | ● | ● |
 | All women 15-49 anaemic (%) | Anaemia | ⚠ | ● | ● | ● | · |
 | Births delivered by caesarean section (%) | Maternal Health (ANC/Delivery/PNC) | ✓ | ● | ● | ● | ● |
+| Blood sugar high (141-160 mg/dl) - men (%) | Hypertension & Blood Sugar | ⚠ | · | · | ● | ● |
+| Blood sugar high (141-160 mg/dl) - women (%) | Hypertension & Blood Sugar | ⚠ | · | · | ● | ● |
+| Blood sugar very high (>160 mg/dl) - men (%) | Hypertension & Blood Sugar | ⚠ | · | ● | ● | ● |
+| Blood sugar very high (>160 mg/dl) - women (%) | Hypertension & Blood Sugar | ⚠ | · | ● | ● | ● |
 | Breastfed child 6-23m adequate diet (%) | Child Feeding & Nutrition | ⚠ | · | ● | ● | ● |
 | C-section in private facility (%) | Maternal Health (ANC/Delivery/PNC) | ✓ | ● | ● | ● | ● |
 | C-section in public facility (%) | Maternal Health (ANC/Delivery/PNC) | ✓ | ● | ● | ● | ● |
@@ -63,6 +68,8 @@ This dataset is a tidy/long compilation of India's National Family Health Survey
 | Children under 5 stunted (%) | Child Feeding & Nutrition | ✓ | ● | ● | ● | ● |
 | Children under 5 underweight (%) | Child Feeding & Nutrition | ✓ | ● | ● | ● | ● |
 | Children under 5 wasted (%) | Child Feeding & Nutrition | ✓ | ● | ● | ● | ● |
+| Elevated blood pressure or on medication - men (%) | Hypertension & Blood Sugar | ⚠ | · | · | ● | ● |
+| Elevated blood pressure or on medication - women (%) | Hypertension & Blood Sugar | ⚠ | · | · | ● | ● |
 | Ever-married women experienced spousal violence (%) | Women's Empowerment & Violence | ⚠ | ● | ● | ● | ● |
 | FP: Any method (%) | Family Planning | ⚠ | ● | ● | · | ● |
 | FP: Any modern method (%) | Family Planning | ⚠ | ● | ● | ● | ● |
@@ -93,6 +100,10 @@ This dataset is a tidy/long compilation of India's National Family Health Survey
 | Men who consume alcohol (%) | Tobacco & Alcohol | ✓ | ● | ● | ● | ● |
 | Men who ever used the internet (%) | Education & Adults | ✓ | · | · | ● | ● |
 | Men who use any tobacco (%) | Tobacco & Alcohol | ✓ | ● | ● | ● | ● |
+| Mildly elevated blood pressure (140-159/90-99) - men (%) | Hypertension & Blood Sugar | ⚠ | · | ● | ● | ● |
+| Mildly elevated blood pressure (140-159/90-99) - women (%) | Hypertension & Blood Sugar | ⚠ | · | ● | ● | ● |
+| Moderately/severely elevated blood pressure - men (%) | Hypertension & Blood Sugar | ⚠ | · | · | ● | ● |
+| Moderately/severely elevated blood pressure - women (%) | Hypertension & Blood Sugar | ⚠ | · | · | ● | ● |
 | Mother received MCP card (%) | Maternal Health (ANC/Delivery/PNC) | ✓ | · | ● | ● | ● |
 | Mother took IFA 100+ days (%) | Maternal Health (ANC/Delivery/PNC) | ✓ | ● | ● | ● | ● |
 | Non-pregnant women anaemic (%) | Anaemia | ⚠ | ● | ● | ● | · |
@@ -101,6 +112,8 @@ This dataset is a tidy/long compilation of India's National Family Health Survey
 | Pregnant women anaemic (%) | Anaemia | ⚠ | ● | ● | ● | · |
 | Prevalence of ARI symptoms (%) | Childhood Diseases | ✓ | ● | ● | ● | ● |
 | Prevalence of diarrhoea, last 2 weeks (%) | Childhood Diseases | ✓ | ● | ● | ● | ● |
+| Raised blood sugar (>140 mg/dl) - men (%) | Hypertension & Blood Sugar | ⚠ | · | ● | ● | ● |
+| Raised blood sugar (>140 mg/dl) - women (%) | Hypertension & Blood Sugar | ⚠ | · | ● | ● | ● |
 | Sex ratio at birth, last 5 years (f per 1000 males) | Population & Household | ✓ | ● | ● | ● | · |
 | Sex ratio of total population (f per 1000 males) | Population & Household | ✓ | ● | ● | ● | · |
 | Total child 6-23m adequate diet (%) | Child Feeding & Nutrition | ⚠ | · | ● | ● | ● |
@@ -127,10 +140,16 @@ This dataset is a tidy/long compilation of India's National Family Health Survey
 ## Comparability cautions
 
 - **All women 15-49 anaemic (%)** — NFHS-6 measured haemoglobin from venous blood, whereas earlier rounds used capillary blood — anaemia levels are not directly comparable across rounds.
+- **Blood sugar high (141-160 mg/dl) - men (%)** — Introduced from NFHS-4 (absent in NFHS-3); measurement (random/fasting), instruments and category cut-offs differ across rounds, and NFHS-5/6 composites include people on medication — treat cross-round comparisons as approximate.
+- **Blood sugar high (141-160 mg/dl) - women (%)** — Introduced from NFHS-4 (absent in NFHS-3); measurement (random/fasting), instruments and category cut-offs differ across rounds, and NFHS-5/6 composites include people on medication — treat cross-round comparisons as approximate.
+- **Blood sugar very high (>160 mg/dl) - men (%)** — Introduced from NFHS-4 (absent in NFHS-3); measurement (random/fasting), instruments and category cut-offs differ across rounds, and NFHS-5/6 composites include people on medication — treat cross-round comparisons as approximate.
+- **Blood sugar very high (>160 mg/dl) - women (%)** — Introduced from NFHS-4 (absent in NFHS-3); measurement (random/fasting), instruments and category cut-offs differ across rounds, and NFHS-5/6 composites include people on medication — treat cross-round comparisons as approximate.
 - **Breastfed child 6-23m adequate diet (%)** — Infant and young child feeding (adequate diet) definition was revised across rounds.
 - **Child fully immunized/vaccinated (%)** — Vaccination schedule and the basis of measurement (card-only vs card-or-recall; DPT vs pentavalent) changed across rounds.
 - **Child fully vaccinated (card or recall) (%)** — Vaccination schedule and the basis of measurement (card-only vs card-or-recall; DPT vs pentavalent) changed across rounds.
 - **Children 6-59m anaemic (%)** — NFHS-6 measured haemoglobin from venous blood, whereas earlier rounds used capillary blood — anaemia levels are not directly comparable across rounds.
+- **Elevated blood pressure or on medication - men (%)** — Introduced from NFHS-4 (absent in NFHS-3); measurement (random/fasting), instruments and category cut-offs differ across rounds, and NFHS-5/6 composites include people on medication — treat cross-round comparisons as approximate.
+- **Elevated blood pressure or on medication - women (%)** — Introduced from NFHS-4 (absent in NFHS-3); measurement (random/fasting), instruments and category cut-offs differ across rounds, and NFHS-5/6 composites include people on medication — treat cross-round comparisons as approximate.
 - **Ever-married women experienced spousal violence (%)** — Age base changed (ever-married 15-49 in earlier rounds vs 18-49 in NFHS-5/6).
 - **FP: Any method (%)** — The set of methods counted under 'any/modern method' differs slightly across rounds.
 - **FP: Any modern method (%)** — The set of methods counted under 'any/modern method' differs slightly across rounds.
@@ -140,7 +159,13 @@ This dataset is a tidy/long compilation of India's National Family Health Survey
 - **Married women participate in HH decisions (%)** — Definition of household decision-making (which/how many decisions) changed across rounds.
 - **Men 15-49 anaemic (%)** — NFHS-6 measured haemoglobin from venous blood, whereas earlier rounds used capillary blood — anaemia levels are not directly comparable across rounds.
 - **Men BMI below normal (%)** — Pregnant women and other exclusions in the BMI base differ across rounds.
+- **Mildly elevated blood pressure (140-159/90-99) - men (%)** — Introduced from NFHS-4 (absent in NFHS-3); measurement (random/fasting), instruments and category cut-offs differ across rounds, and NFHS-5/6 composites include people on medication — treat cross-round comparisons as approximate.
+- **Mildly elevated blood pressure (140-159/90-99) - women (%)** — Introduced from NFHS-4 (absent in NFHS-3); measurement (random/fasting), instruments and category cut-offs differ across rounds, and NFHS-5/6 composites include people on medication — treat cross-round comparisons as approximate.
+- **Moderately/severely elevated blood pressure - men (%)** — Introduced from NFHS-4 (absent in NFHS-3); measurement (random/fasting), instruments and category cut-offs differ across rounds, and NFHS-5/6 composites include people on medication — treat cross-round comparisons as approximate.
+- **Moderately/severely elevated blood pressure - women (%)** — Introduced from NFHS-4 (absent in NFHS-3); measurement (random/fasting), instruments and category cut-offs differ across rounds, and NFHS-5/6 composites include people on medication — treat cross-round comparisons as approximate.
 - **Non-pregnant women anaemic (%)** — NFHS-6 measured haemoglobin from venous blood, whereas earlier rounds used capillary blood — anaemia levels are not directly comparable across rounds.
 - **Pregnant women anaemic (%)** — NFHS-6 measured haemoglobin from venous blood, whereas earlier rounds used capillary blood — anaemia levels are not directly comparable across rounds.
+- **Raised blood sugar (>140 mg/dl) - men (%)** — Introduced from NFHS-4 (absent in NFHS-3); measurement (random/fasting), instruments and category cut-offs differ across rounds, and NFHS-5/6 composites include people on medication — treat cross-round comparisons as approximate.
+- **Raised blood sugar (>140 mg/dl) - women (%)** — Introduced from NFHS-4 (absent in NFHS-3); measurement (random/fasting), instruments and category cut-offs differ across rounds, and NFHS-5/6 composites include people on medication — treat cross-round comparisons as approximate.
 - **Total child 6-23m adequate diet (%)** — Infant and young child feeding (adequate diet) definition was revised across rounds.
 - **Women BMI below normal (%)** — Pregnant women and other exclusions in the BMI base differ across rounds.
