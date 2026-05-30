@@ -35,5 +35,4 @@ references:
     year: 2026
     publisher:
       name: "International Institute for Population Sciences, Mumbai"
-# After releasing on Zenodo, add the DOI here and in README:
-# doi: 10.5281/zenodo.XXXXXXX
+doi: 10.5281/zenodo.20460014

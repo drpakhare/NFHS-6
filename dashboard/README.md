@@ -55,7 +55,7 @@ dashboard/
 
 ## How to cite
 **This tool / compiled dataset** (add your name + Zenodo DOI after release):
-> Pakhare, A., & Joshi, A. (2026). *NFHS India Explorer: a harmonised NFHS-3 to NFHS-6 fact-sheet database and dashboard* (v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+> Pakhare, A., & Joshi, A. (2026). *NFHS India Explorer: a harmonised NFHS-3 to NFHS-6 fact-sheet database and dashboard* (v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.20460014
 
 **Always also cite the source:**
 > International Institute for Population Sciences (IIPS). (2026). *National Family Health Survey (NFHS-6), 2023–24: India and State/UT Fact Sheets.* Mumbai: IIPS. (plus the NFHS-5/4/3 fact-sheet reports for earlier rounds.)
