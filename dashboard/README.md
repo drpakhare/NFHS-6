@@ -47,7 +47,6 @@ dashboard/
 ```
 
 ## Data notes (please read before publishing findings)
-- **Manipur is absent from NFHS-6** (fieldwork not completed); present in earlier rounds.
 - **Ladakh** appears only from NFHS-5; **Dadra & Nagar Haveli** and **Daman & Diu** are separate UTs in NFHS-3/4 but a single merged UT in NFHS-5/6 — these do not align across rounds.
 - **Indicator definitions shifted** between rounds (age groups, denominators, vaccine schedules); harmonised series are *indicative*. Verify exact definitions in the source fact-sheet footnotes.
 - **▲** marks parenthesised small-sample estimates (NFHS-5 convention).

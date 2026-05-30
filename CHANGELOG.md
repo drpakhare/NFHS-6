@@ -45,5 +45,4 @@ First public release.
 - Data-use disclaimer, author/acknowledgement and citation placeholders.
 
 ### Notes
-- Manipur is absent from NFHS-6 (field-work not completed).
 - Underlying estimates are © IIPS / Government of India; this is a derived compilation.

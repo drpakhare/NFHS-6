@@ -30,7 +30,6 @@ This dataset is a tidy/long compilation of India's National Family Health Survey
 
 ## Geography notes
 
-- **Manipur** is absent from NFHS-6 (field-work not completed).
 - **Ladakh** appears only from NFHS-5; **Dadra & Nagar Haveli** and **Daman & Diu** are separate UTs in NFHS-3/4 but a single merged UT in NFHS-5/6.
 - **Blood pressure & blood glucose** indicators were introduced from NFHS-4 (absent in NFHS-3).
 

@@ -70,7 +70,7 @@ renaming to match the database. Boundaries are for visual reference only.
 
 - Fact-sheet estimates only; no unit-level re-analysis, no significance testing, no confidence
   intervals.
-- Manipur absent from NFHS-6; Ladakh only from NFHS-5; DNH & DD geography differs across rounds.
+- Ladakh appears only from NFHS-5; Dadra & Nagar Haveli and Daman & Diu geography differs across rounds.
 - Definition changes mean some cross-round comparisons are not like-for-like (see flags).
 - Figures may differ slightly from the source fact sheets due to extraction/rounding; the
   original IIPS fact sheets are authoritative.
