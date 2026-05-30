@@ -69,6 +69,10 @@
   .defsbody{background:#f8fafc;border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-top:6px;font-size:12.5px;max-width:780px}
   .warnnote{margin-top:6px;color:#9a3412}
   .disc{background:#fbfbfd;border:1px solid var(--line);border-left:4px solid #9a3412;border-radius:6px;padding:12px 14px;font-size:13px;color:#3a4654}
+  .hintbar{background:#eef6f3;border:1px solid #cfe6dd;color:#23604f;border-radius:8px;padding:8px 12px;font-size:13px;margin:0 0 14px;display:flex;align-items:center;gap:10px}
+  .hintbar .x{margin-left:auto;cursor:pointer;border:none;background:none;color:#23604f;font-size:17px;font-weight:700;line-height:1;padding:0 2px}
+  ol.howto{margin:6px 0 0 18px;padding:0;font-size:13.5px}
+  ol.howto li{margin:3px 0}
 </style>
 </head>
 <body>
@@ -86,6 +90,11 @@
 </div></nav>
 
 <main class="wrap">
+
+  <div id="hintbar" class="hintbar">
+    <span>💡 <b>New here?</b> Pick an <b>indicator group → indicator</b>, choose a round and area, then click a state on the map to see its trend. Copy the URL anytime to share the exact view. See <b>About &amp; cite</b> for definitions and caveats.</span>
+    <button class="x" id="hintClose" title="Dismiss">×</button>
+  </div>
 
   <!-- MAP -->
   <section id="tab-map">
@@ -193,6 +202,14 @@ ORDER BY round, value;</textarea>
     <div class="panel">
       <h2 class="section">About this tool</h2>
       <p>An open, frontend-only dashboard to explore and download key indicators from India's <b>National Family Health Survey (NFHS)</b> across four rounds — NFHS-3 (2005–06), NFHS-4 (2015–16), NFHS-5 (2019–21) and the newly released NFHS-6 (2023–24) — for India and all states/UTs, at Urban / Rural / Total levels. Everything runs in your browser; no data leaves your device and no server is required.</p>
+
+      <h3>How to use</h3>
+      <ol class="howto">
+        <li>On <b>Map</b>, pick an <b>indicator group → indicator</b>, then a <b>round</b> and <b>area</b>. Grey states have no data for that round. Click a state to jump to its trend.</li>
+        <li><b>Trends</b> shows an indicator across all four rounds for the states you select; <b>Compare states</b> ranks every state for one round.</li>
+        <li>Check the <b>✓ comparable / ⚠ definition changed</b> badge and the <b>ⓘ Definitions by round</b> before comparing across rounds.</li>
+        <li>Use <b>⬇ Data (CSV)</b> / <b>⬇ Image (PNG)</b> on any chart, or the <b>Data explorer</b> for filtered/full downloads and SQL. Copy the page URL to share the exact view you're seeing.</li>
+      </ol>
 
       <h3>Disclaimer</h3>
       <div class="disc">
@@ -633,6 +650,11 @@ ORDER BY round, value;</textarea>
   };
 
   // ---------- init ----------
+  // dismissible intro hint (remembers the choice)
+  (function(){var hb=el("hintbar");if(!hb)return;
+    try{if(localStorage.getItem("nfhs_hint")==="off")hb.style.display="none";}catch(e){}
+    var x=el("hintClose"); if(x)x.onclick=function(){hb.style.display="none";try{localStorage.setItem("nfhs_hint","off");}catch(e){}};
+  })();
   renderTable();
   var hp=readHash();
   if(hp && hp.t){ applyHash(hp); } else { drawMap(); }

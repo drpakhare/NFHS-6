@@ -2,12 +2,116 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta http-equiv="refresh" content="0; url=./dashboard/"/>
-<link rel="canonical" href="./dashboard/"/>
-<title>NFHS India Explorer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NFHS India Explorer — NFHS-3 to NFHS-6 (2005–2024)</title>
+<meta name="description" content="An open, free dashboard to explore and download India's National Family Health Survey (NFHS) indicators across rounds 3, 4, 5 and 6 for every state and UT."/>
+<style>
+  :root{--bg:#f4f6f9;--panel:#fff;--ink:#1b2733;--muted:#5b6b7b;--brand:#1f4e78;--brand2:#2e7d6b;--line:#e2e8f0;--accent:#c2410c;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;font-size:15px}
+  a{color:var(--brand)}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 18px}
+  header{background:linear-gradient(100deg,#1f4e78,#2e7d6b);color:#fff;padding:14px 0}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  header .brand{font-size:17px;font-weight:700}
+  header a.top{color:#fff;font-size:13.5px;text-decoration:none;border:1px solid rgba(255,255,255,.5);padding:7px 13px;border-radius:7px;font-weight:600}
+  header a.top:hover{background:rgba(255,255,255,.12)}
+  .hero{background:linear-gradient(160deg,#eaf1f4,#f4f6f9);border-bottom:1px solid var(--line);padding:54px 0 46px}
+  .hero h1{font-size:34px;line-height:1.18;margin:0 0 12px;color:#16344c}
+  .hero p.lead{font-size:17px;color:#3a4654;max-width:720px;margin:0 0 22px}
+  .cta{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:13px 26px;border-radius:9px;box-shadow:0 2px 6px rgba(31,78,120,.25)}
+  .cta:hover{background:#173a5a}
+  .cta.alt{background:#eef2f7;color:var(--brand);margin-left:8px;box-shadow:none}
+  .cta.alt:hover{background:#e0e8f1}
+  .badges{margin-top:18px}
+  .badges img{vertical-align:middle}
+  section.block{padding:40px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:21px;color:var(--brand);margin:0 0 18px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:760px){.cards{grid-template-columns:1fr}.hero h1{font-size:27px}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:18px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+  .card .ic{font-size:24px}
+  .card h3{margin:8px 0 6px;font-size:15.5px}
+  .card p{margin:0;font-size:13.5px;color:var(--muted)}
+  ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){ol.steps{grid-template-columns:1fr}}
+  ol.steps li{counter-increment:s;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px 14px 52px;position:relative;font-size:14px}
+  ol.steps li::before{content:counter(s);position:absolute;left:14px;top:13px;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:13px}
+  ol.steps b{color:#16344c}
+  .note{background:#fff7ed;border:1px solid #fed7aa;color:#7c2d12;border-radius:10px;padding:14px 16px;font-size:13.5px}
+  .note ul{margin:8px 0 0 18px;padding:0}
+  .meta{display:grid;grid-template-columns:1fr 1fr;gap:22px;font-size:13.5px}
+  @media(max-width:760px){.meta{grid-template-columns:1fr}}
+  .meta h3{font-size:14px;margin:0 0 6px;color:var(--brand)}
+  .cite{background:#f8fafc;border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:6px;padding:10px 12px;font-size:12.5px}
+  footer{color:var(--muted);font-size:12px;padding:22px 0;text-align:center}
+</style>
 </head>
 <body>
-<p>Redirecting to the <a href="./dashboard/">NFHS India Explorer dashboard</a>…</p>
-<script>location.replace("./dashboard/");</script>
+<header><div class="wrap">
+  <div class="brand">NFHS India Explorer</div>
+  <a class="top" href="./dashboard/">Open the Dashboard →</a>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <h1>Explore India's National Family Health Survey,<br>NFHS-3 to NFHS-6 — in one place.</h1>
+  <p class="lead">An open, free tool to explore and download key health, nutrition and demographic indicators across four survey rounds (2005–06 to 2023–24) for India and every state &amp; UT — on an interactive map, as trends over time, and as downloadable data. Everything runs in your browser.</p>
+  <a class="cta" href="./dashboard/">Open the Dashboard →</a>
+  <a class="cta alt" href="#how">How to use</a>
+  <div class="badges">
+    <a href="https://doi.org/10.5281/zenodo.20460014"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20460014.svg" alt="DOI 10.5281/zenodo.20460014"></a>
+  </div>
+</div></div>
+
+<section class="block"><div class="wrap">
+  <h2>What you can do</h2>
+  <div class="cards">
+    <div class="card"><div class="ic">🗺️</div><h3>Map any indicator</h3><p>Colour every state/UT by a chosen indicator and round. States without data stay visible in grey; values can be printed on the downloaded image.</p></div>
+    <div class="card"><div class="ic">📈</div><h3>See trends &amp; compare</h3><p>Track an indicator across all four rounds for any set of states, or rank every state for one round.</p></div>
+    <div class="card"><div class="ic">⬇️</div><h3>Download &amp; share</h3><p>Export any view as CSV, PNG or the full Excel/CSV/Parquet dataset — or copy the URL to share an exact view.</p></div>
+  </div>
+</div></section>
+
+<section class="block" id="how"><div class="wrap">
+  <h2>How to use it — in 4 steps</h2>
+  <ol class="steps">
+    <li>Pick an <b>indicator group</b>, then the <b>indicator</b> (the list shows only what that round measured).</li>
+    <li>Choose the <b>round</b> (NFHS-3 to 6) and the <b>area</b> — Total, Urban or Rural.</li>
+    <li>Read the <b>✓ comparable / ⚠ definition-changed</b> flag and the per-round definitions before comparing across rounds.</li>
+    <li><b>Download</b> the data or image, or <b>copy the URL</b> to share that exact view with anyone.</li>
+  </ol>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <h2>Good to know</h2>
+  <div class="note">
+    This is a derived compilation of official NFHS <i>fact-sheet</i> estimates — <b>not produced or endorsed by IIPS or the Government of India</b>. Estimates carry survey error and are shown without significance testing.
+    <ul>
+      <li><b>Manipur is absent from NFHS-6</b> (field-work not completed); it appears in earlier rounds.</li>
+      <li><b>Indicator definitions changed</b> across some rounds — cross-round comparisons may not be like-for-like (see the comparability flags).</li>
+      <li>The original IIPS fact sheets are authoritative. Not for clinical, legal, financial or commercial decisions. Map boundaries are illustrative only.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <div class="meta">
+    <div>
+      <h3>How to cite</h3>
+      <div class="cite">Pakhare, A., &amp; Joshi, A. (2026). <i>NFHS India Explorer: a harmonised NFHS-3 to NFHS-6 fact-sheet database and dashboard</i> (v1.0.0) [Software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.20460014">https://doi.org/10.5281/zenodo.20460014</a></div>
+      <p style="margin:10px 0 0;color:var(--muted)">Always also cite the source: International Institute for Population Sciences (IIPS), NFHS-3 to NFHS-6 Fact Sheets, MoHFW, Government of India.</p>
+    </div>
+    <div>
+      <h3>Authors &amp; licence</h3>
+      <p>Abhijit Pakhare &amp; Ankur Joshi, Department of Community &amp; Family Medicine, AIIMS Bhopal, India.</p>
+      <p>Dashboard code <b>MIT</b>; compiled dataset <b>CC-BY-4.0</b>. Data © IIPS / Government of India.</p>
+      <p><a href="https://github.com/drpakhare/NFHS-6">Source code &amp; data on GitHub →</a></p>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  Data source: International Institute for Population Sciences (IIPS), National Family Health Survey (NFHS-3 to NFHS-6), Ministry of Health &amp; Family Welfare, Government of India.
+</div></footer>
 </body>
 </html>
