@@ -1,0 +1,15 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Original IIPS source publications are NOT redistributed in this public repo.
+# (The compiled dataset + dashboard are self-contained without them.)
+Fact Sheets/

@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software or the compiled dataset, please cite both this work and the original IIPS NFHS fact sheets."
+title: "NFHS India Explorer: a harmonised NFHS-3 to NFHS-6 fact-sheet database and dashboard"
+abstract: >-
+  An open, frontend-only (no-server) dashboard and harmonised long-format database of India's
+  National Family Health Survey (NFHS) fact-sheet indicators across rounds 3 (2005-06),
+  4 (2015-16), 5 (2019-21) and 6 (2023-24), for India and all states/UTs at
+  Urban/Rural/Total levels. Provides an interactive map, cross-round trends, state
+  comparisons, a filterable data explorer with downloads, comparability flags and
+  per-round indicator definitions.
+type: software
+version: "1.0.0"
+date-released: "2026-05-30"
+license: MIT
+authors:
+  - given-names: "Abhijit"
+    family-names: "Pakhare"
+    affiliation: "Department of Community & Family Medicine, AIIMS Bhopal, India"
+    orcid: "https://orcid.org/0000-0003-2897-4141"
+  - given-names: "Ankur"
+    family-names: "Joshi"
+    affiliation: "Department of Community & Family Medicine, AIIMS Bhopal, India"
+    orcid: "https://orcid.org/0000-0002-3766-376X"
+keywords:
+  - NFHS
+  - National Family Health Survey
+  - India
+  - public health
+  - open data
+  - health indicators
+references:
+  - type: report
+    title: "National Family Health Survey (NFHS-6), 2023-24: India and State/UT Fact Sheets"
+    authors:
+      - name: "International Institute for Population Sciences (IIPS)"
+    year: 2026
+    publisher:
+      name: "International Institute for Population Sciences, Mumbai"
+# After the Zenodo release, add the DOI here:
+# doi: 10.5281/zenodo.XXXXXXX

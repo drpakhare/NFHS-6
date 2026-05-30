@@ -1,0 +1,33 @@
+{
+  "title": "NFHS India Explorer: A harmonised NFHS-3 to NFHS-6 fact-sheet database and dashboard",
+  "description": "An open, frontend-only (no-server) dashboard and harmonised long-format database of India's National Family Health Survey (NFHS) fact-sheet indicators across rounds 3 (2005-06), 4 (2015-16), 5 (2019-21) and 6 (2023-24), for India and all states/UTs at Urban/Rural/Total levels. Includes an interactive India choropleth, cross-round trends, state comparisons, a filterable data explorer with CSV/Excel/SQL download, comparability flags and per-round indicator definitions. Underlying estimates are from the IIPS NFHS fact sheets; this work is a derived compilation and is not produced or endorsed by IIPS or the Government of India.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "version": "1.0.0",
+  "language": "eng",
+  "keywords": [
+    "NFHS",
+    "National Family Health Survey",
+    "India",
+    "public health",
+    "demographic and health survey",
+    "health indicators",
+    "open data",
+    "data visualization",
+    "dashboard"
+  ],
+  "creators": [
+    {
+      "name": "Pakhare, Abhijit",
+      "affiliation": "Department of Community & Family Medicine, All India Institute of Medical Sciences (AIIMS), Bhopal, India",
+      "orcid": "0000-0003-2897-4141"
+    },
+    {
+      "name": "Joshi, Ankur",
+      "affiliation": "Department of Community & Family Medicine, All India Institute of Medical Sciences (AIIMS), Bhopal, India",
+      "orcid": "0000-0002-3766-376X"
+    }
+  ],
+  "notes": "Underlying survey estimates are from the International Institute for Population Sciences (IIPS) NFHS fact sheets (NFHS-3 to NFHS-6), Ministry of Health & Family Welfare, Government of India. The compiled dataset is released under CC-BY-4.0; dashboard code under MIT."
+}
